@@ -1,0 +1,9 @@
+# Usage ./run <dir> <module> 
+# 
+# Script to launch python on specific files 
+# in specific directories 
+# For e.g. ./run unit2 circulate 
+# 
+# 
+
+cd $1; python3 "$2.py"
