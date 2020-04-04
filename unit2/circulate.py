@@ -9,6 +9,11 @@ def circulate(a, b, c):
     @param c is a integer
 
     @return nothing
+
+    >>> circulate(1, 2, 3)
+    2 3 1
+    3 1 2
+    1 2 3
     """
     i = 3
     while i:
@@ -45,3 +50,9 @@ def circulate_list(alist):
 alist = input("enter multiple values\n").split()
 print()
 circulate_list(alist)
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+    # pass
