@@ -29,5 +29,3 @@ def swap_func():
 
 swap_func()  # go back to their original values
 print("Value of a is {a} and\nValue of b is {b}".format(a=a, b=b))
-
-
