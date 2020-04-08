@@ -6,7 +6,7 @@ fileData = file.read()
 file.seek(0)
 fileDataList = file.readlines()
 print("FileContains:")
-print(len(fileData), ":Charecters ")
+print(len(fileData), ":Characters ")
 print(len(fileDataList), ":Lines ")
 words = fileData.split(" ")
 total_no_of_words = len(words)
@@ -16,4 +16,4 @@ file.close()
 # Enhancement
 # Case 1: Number of specific words in a file.
 # Case 2: Number of specific words in a file at perticular line.
-# Case 3: Frquency Analysis of words
+# Case 3: Frequency Analysis of words
