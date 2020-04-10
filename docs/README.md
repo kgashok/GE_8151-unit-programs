@@ -57,6 +57,30 @@ pointB |  |
 
 
 
+### guess
+
+
+
+
+
+
+
+### tower_of_hanoi
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+n |  | 
+fromTower |  | 
+toTower |  | 
+tempTower |  | 
+
+
+
+
+
 ### insertCard
 
 
@@ -66,6 +90,116 @@ name | description | default
 --- | --- | ---
 deck |  | 
 newCard |  | 
+
+
+
+
+
+### find_min
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+a |  | 
+b |  | 
+
+
+
+
+
+### min_of_three
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+a |  | 
+b |  | 
+c |  | 
+
+
+
+
+
+### min_of_list
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+aList |  | 
+
+
+
+
+
+### binarySearch
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+alist |  | 
+item |  | 
+
+
+
+
+
+### add
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+numlst |  | 
+
+
+
+
+
+### gcd
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+x |  | 
+y |  | 
+
+
+
+
+
+### square_root
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+n |  | 
+
+
+
+
+
+### linearsearch
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+num_list |  | 
+search |  | 
 
 
 
