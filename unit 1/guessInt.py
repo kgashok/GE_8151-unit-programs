@@ -1,6 +1,8 @@
-#Guess a number
+# Guess a number
 
 from random import randint
+
+
 def guess():
     myguess = int(input("Enter a number:"))
     if number > myguess:
@@ -9,11 +11,12 @@ def guess():
         print('You guess high')
     else:
         print('Great! You guessed right!')
-    
+
+
 print("Guess a number")
 attempt = 10
-number = randint(1,100)
+number = randint(1, 100)
 while attempt > 0:
-    guess()        
+    guess()
     attempt -= 1
 print('Good try! Play again!')
