@@ -231,6 +231,20 @@ alist |  |
 
 
 
+### selectsort
+
+
+implements the selection sort   
+
+#### Parameters
+name | description | default
+--- | --- | ---
+lst | unsorted list of numbers | 
+
+
+
+
+
 ### random_list
 
 
