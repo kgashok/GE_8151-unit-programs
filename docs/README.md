@@ -56,8 +56,6 @@ pointB |  |
 
 
 
-<<<<<<< HEAD
-=======
 
 ### guess
 
@@ -233,6 +231,20 @@ alist |  |
 
 
 
+### selectsort
+
+
+implements the selection sort   
+
+#### Parameters
+name | description | default
+--- | --- | ---
+lst | unsorted list of numbers | 
+
+
+
+
+
 ### random_list
 
 
@@ -359,4 +371,3 @@ high |  |
 
 
 
->>>>>>> 11fa22d19f2be2264179d2f0356926050587c944
