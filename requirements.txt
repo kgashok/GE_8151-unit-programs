@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 python3
 doctest
+=======
+pylint 
+python3
+doctest
+>>>>>>> 11fa22d19f2be2264179d2f0356926050587c944
