@@ -1,0 +1,7 @@
+print("READ LINE DEMO")
+print("--------------")
+source_file = open("source.txt", "r")
+data = source_file.readlines()
+print("Type of Data:",type(data))
+print("Data Contains:",data)
+source_file.close()
