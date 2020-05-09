@@ -1,14 +1,13 @@
-print("\nFILE READ LINES")
+print("\nFILE READ LINE")
 print("------------------\n")
 
 #Opening file in read mode 
 source_file = open("source.txt", "r")
 print("File Opened for Readeing")
 
-#Reading from File [readlines - reads all the lines in files and returns list of strings]
-data = source_file.readlines()
+#Reading from File [readline reads a line (delimited with newlinew char '\n')]
+data = source_file.readline()
 print("File Read Completed")
-print("Type of Data:",type(data))
 
 print("\n.....DATA STARTS ......\n")
 #Printing data
