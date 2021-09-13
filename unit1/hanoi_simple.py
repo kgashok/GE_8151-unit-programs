@@ -1,6 +1,5 @@
 # global variable to count number of steps
 c = 0
-tower = ['', 'red  ', 'green', 'blue ']
 
 
 def move_tower(height, fromPole, toPole, withPole):
@@ -52,6 +51,7 @@ def move_disk(disk, fp, tp):
     print("Step", c, ": moving Disk", tower[disk], "from", fp, "to", tp)
 
 
+tower = ['', 'red  ', 'green', 'blue ']
 move_tower(3, "Start", "Dest", "Middle")
 
 if __name__ == "__main__":
