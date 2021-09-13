@@ -1,5 +1,4 @@
-# global variable to count number of steps
-c = 0
+c = 0 # global variable to count number of steps
 
 
 def move_tower(height, fromPole, toPole, withPole):
