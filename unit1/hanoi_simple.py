@@ -1,7 +1,8 @@
 #global variable to count number of steps
 c = 0
+tower = ['', 'red  ', 'green', 'blue ']
 
-def move_tower(height, fromPole, toPole, withPole):
+def move_tower(height, fromPole, toPole, withPole, init=0):
     '''A recursive function which implements the solution
     to the Hanoi Puzzle
 
@@ -12,6 +13,16 @@ def move_tower(height, fromPole, toPole, withPole):
     @param withPole is a string
 
     @return nothing
+
+    >>> move_tower(3, 'Start', 'Dest', 'Middle')
+    Step 1 : moving Disk red   from Start to Dest
+    Step 2 : moving Disk green from Start to Middle
+    Step 3 : moving Disk red   from Dest to Middle
+    Step 4 : moving Disk blue  from Start to Dest
+    Step 5 : moving Disk red   from Middle to Start
+    Step 6 : moving Disk green from Middle to Dest
+    Step 7 : moving Disk red   from Start to Dest
+
     '''
 
     # Terminal case
@@ -40,5 +51,9 @@ def move_disk(disk, fp, tp):
     print("Step", c, ": moving Disk", tower[disk], "from", fp, "to", tp)
 
 
-tower = ['', 'red  ', 'green', 'blue ']
 move_tower(3, "Start", "Dest", "Middle")
+
+if __name__ == "__main__":
+    c = 0 # hack, needs to be fixed
+    import doctest
+    doctest.testmod()
