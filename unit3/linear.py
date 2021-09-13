@@ -5,7 +5,7 @@ def linearsearch(num_list, search):
     match is found then that particular item is returned, 
     otherwise the search continues till the end of the 
     data collection.
-    
+
     @author KAMALATHANGARAJAN
     '''
     found = False
