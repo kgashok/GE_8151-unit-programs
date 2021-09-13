@@ -2,7 +2,7 @@ c = 0
 
 
 def move_tower(height, fromPole, toPole, withPole):
-    '''A recursive function which implements the solution 
+    '''A recursive function which implements the solution
     to the Hanoi Puzzle
     '''
 
@@ -10,9 +10,9 @@ def move_tower(height, fromPole, toPole, withPole):
     if height == 1:
         move_disk(height, fromPole, toPole)
     else:
-        move_tower(height-1, fromPole, withPole, toPole)
+        move_tower(height - 1, fromPole, withPole, toPole)
         move_disk(height, fromPole, toPole)
-        move_tower(height-1, withPole, toPole, fromPole)
+        move_tower(height - 1, withPole, toPole, fromPole)
 
 
 def move_disk(disk, fp, tp):
