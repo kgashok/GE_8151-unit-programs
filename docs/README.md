@@ -343,31 +343,33 @@ aList |  |
 
 
 ### move_tower
+Authors: **kgashok**
 
+A recursive function which implements the solution to the Hanoi Puzzle   
 
-A recursive function which implements the solution to the Hanoi Puzzle 
 #### Parameters
 name | description | default
 --- | --- | ---
-height |  | 
-fromPole |  | 
-toPole |  | 
-withPole |  | 
+height | is a integer | 
+fromPole | is a string | 
+toPole | is a string | 
+withPole | is a string | 
 
 
 
 
 
 ### move_disk
+Authors: **kgashok**
 
+move_disk does the equivalent of a move by printing the disk (named in the tower list) being moved, from the fp pole to the tp pole   
 
-move_disk does the equivalent of a move by printing the disk (named in the tower list) being moved, from the fp pole to the tp pole 
 #### Parameters
 name | description | default
 --- | --- | ---
-disk |  | 
-fp |  | 
-tp |  | 
+disk | is a integer | 
+fp | is a string | 
+tp | is a string | 
 
 
 
