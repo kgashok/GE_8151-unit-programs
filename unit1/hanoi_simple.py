@@ -1,7 +1,7 @@
 c = 0 # global variable to count number of steps
 
 
-def move_tower(height, fromPole, toPole, withPole):
+def move_tower(height, fromPole, toPole, withPole="temp"):
     '''A recursive function which implements the solution
     to the Hanoi Puzzle
 
