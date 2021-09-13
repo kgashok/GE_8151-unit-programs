@@ -55,6 +55,6 @@ def move_disk(disk, fp, tp):
 move_tower(3, "Start", "Dest", "Middle")
 
 if __name__ == "__main__":
-    c = 0 # hack, needs to be fixed
+    c = 0  # hack, needs to be fixed
     import doctest
     doctest.testmod()
