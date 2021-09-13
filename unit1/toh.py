@@ -21,6 +21,9 @@ print()
 # In a recursive way
 
 def tower_of_hanoi(n, fromTower, toTower, tempTower):
+    '''
+    @author sdnandhu
+    '''
     if n == 1:
         print("Move top disc from ", fromTower, " to ", toTower)
     else:
