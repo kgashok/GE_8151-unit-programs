@@ -1,5 +1,6 @@
-#global variable to count number of steps
+# global variable to count number of steps
 c = 0
+
 
 def move_tower(height, fromPole, toPole, withPole):
     '''A recursive function which implements the solution
@@ -27,12 +28,12 @@ def move_disk(disk, fp, tp):
     '''move_disk does the equivalent of a move 
     by printing the disk (named in the tower list)
     being moved, from the fp pole to the tp pole
-    
+
     @author kgashok
     @param disk is a integer 
     @param fp is a string 
     @param tp is a string 
- 
+
     @return nothing'''
 
     global c
