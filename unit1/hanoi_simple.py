@@ -16,7 +16,7 @@ def move_tower(height, fromPole, toPole, withPole):
 
 
 def move_disk(disk, fp, tp):
-    '''move_disk does the equivalent of a move
+    '''move_disk does the equivalent of a move 
     by printing the disk (named in the tower list)
     being moved, from the fp pole to the tp pole'''
 
