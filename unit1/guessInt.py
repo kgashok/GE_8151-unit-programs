@@ -13,7 +13,7 @@ def guess():
         print('Great! You guessed right!')
 
 
-print("Guess a number")
+print("Guess a number (between 1 and 100):")
 attempt = 10
 number = randint(1, 100)
 while attempt > 0:
