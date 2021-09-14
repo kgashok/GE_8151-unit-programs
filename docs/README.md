@@ -294,10 +294,10 @@ arlist |  |
 
 
 
-### guess
+### ask_for_guess
 
 
-
+returns an integer number as guessed by the user 
 
 
 
@@ -344,10 +344,32 @@ aList |  |
 
 
 
-### askForGuess
+### insertCard
 
 
-function to get a number guessed by the user 
+
+#### Parameters
+name | description | default
+--- | --- | ---
+deck |  | 
+newCard |  | 
+
+
+
+
+
+### tower_of_hanoi
+Authors: **sdnandhu**
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+n |  | 
+fromTower |  | 
+toTower |  | 
+tempTower |  | 
+
 
 
 
@@ -380,36 +402,6 @@ name | description | default
 disk | is a integer | 
 fp | is a string | 
 tp | is a string | 
-
-
-
-
-
-### insertCard
-
-
-
-#### Parameters
-name | description | default
---- | --- | ---
-deck |  | 
-newCard |  | 
-
-
-
-
-
-### tower_of_hanoi
-Authors: **sdnandhu**
-
-
-#### Parameters
-name | description | default
---- | --- | ---
-n |  | 
-fromTower |  | 
-toTower |  | 
-tempTower |  | 
 
 
 
