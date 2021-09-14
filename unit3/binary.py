@@ -1,5 +1,12 @@
 # Binary search function
 def binarySearch(alist, item):
+    '''implements the binary search algorithm to find 'item' in the 'alist'
+    
+    @author kgashok
+    @param alist is a list of numbers
+    @param item is an integer
+     
+    '''
     first = 0
     last = len(alist) - 1
     found = False
