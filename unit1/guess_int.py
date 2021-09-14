@@ -1,13 +1,12 @@
-"""Guess the Number, by Al Sweigart al@inventwithpython.com
+"""Guess the Number
 Try to guess the secret number based on hints.
-This code is available at https://nostarch.com/big-book-small-python-programming
-Tags: tiny, beginner, game"""
+"""
 
 import random
 
 
-def askForGuess():
-    '''function to get a number guessed by the user'''
+def ask_for_guess():
+    '''returns an integer number as guessed by the user'''
     while True:
         guess = input('> ')  # Enter the guess.
 
@@ -16,7 +15,7 @@ def askForGuess():
         print('Please enter a number between 1 and 100.')
 
 
-print('Guess the Number, by Al Sweigart al@inventwithpython.com')
+print('*** Guess the Number ***')
 print()
 secretNumber = random.randint(1, 100)  # Select a random number.
 print('I am thinking of a number between 1 and 100.')
@@ -24,7 +23,7 @@ print('I am thinking of a number between 1 and 100.')
 for i in range(10):  # Give the player 10 guesses.
     print('You have {} guesses left. Take a guess.'.format(10 - i))
 
-    guess = askForGuess()
+    guess = ask_for_guess()
     if guess == secretNumber:
         break  # Break out of the for loop if the guess is correct.
 
