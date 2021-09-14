@@ -84,14 +84,15 @@ n |  |
 
 
 ### binarySearch
+Authors: **kgashok**
 
-
+implements the binary search algorithm to find 'item' in the 'alist'   
 
 #### Parameters
 name | description | default
 --- | --- | ---
-alist |  | 
-item |  | 
+alist | is a list of numbers | 
+item | is an integer | 
 
 
 
@@ -343,6 +344,14 @@ aList |  |
 
 
 
+### askForGuess
+
+
+function to get a number guessed by the user 
+
+
+
+
 ### move_tower
 Authors: **kgashok**
 
@@ -354,7 +363,7 @@ name | description | default
 height | is a integer | 
 fromPole | is a string | 
 toPole | is a string | 
-withPole | is a string | 
+withPole | is a string | "temp"
 
 
 
