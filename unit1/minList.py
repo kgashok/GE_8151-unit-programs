@@ -36,14 +36,11 @@ print("Minimum number is ", min_of_three(a, b, c))
 def min_of_list(aList):
     if not aList:
         return None
-    elif len(aList) == 1:
-        return aList[0]
-    else:
-        minVal = aList[0]
-        for number in aList[1:]:
-            if number < minVal:
-                minVal = number
-        return minVal
+    minVal = aList[0]
+    for number in aList[1:]:
+        if number < minVal:
+            minVal = number
+    return minVal
 
 
 myList = []
