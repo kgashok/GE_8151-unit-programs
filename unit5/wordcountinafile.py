@@ -15,5 +15,5 @@ file.close()
 
 # Enhancement
 # Case 1: Number of specific words in a file.
-# Case 2: Number of specific words in a file at perticular line.
+# Case 2: Number of specific words in a file at particular line.
 # Case 3: Frequency Analysis of words
