@@ -20,7 +20,7 @@ def binary_search(alist, token):
 
         if midvalue == token:
             return True
-        
+
         if token < midvalue:
             right = midpoint
         else:
