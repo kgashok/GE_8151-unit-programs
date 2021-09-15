@@ -16,7 +16,7 @@ def binary_search(alist, token):
     while left < right:
         midpoint = (left + right) // 2
         midvalue = alist[midpoint]
-        print(f'searching_for: {token}, mid:{midpoint}, midvalue:{midvalue}')
+        print(f'search for: {token} at mid:{midpoint}, midvalue: {midvalue}')
 
         if midvalue == token:
             return True
@@ -30,12 +30,19 @@ def binary_search(alist, token):
 
 
 # Main Program
+import random
 num_list = []
 n = int(input("Enter the number of elements: "))
-for i in range(0, n):
-    item = input("Enter the item:")
-    num_list.append(item)
-search = input("Enter element to search: ")
+if n == 0: 
+    num_list = sorted([random.randint(1, 100) for _ in range (10)])
+    num_list.sort()
+    print(num_list)
+else:
+    for i in range(0, n):
+        item = input("Enter the item:")
+        num_list.append(int(item))
+
+search = int(input("Enter element to search: "))
 ans = binary_search(num_list, search)
 if ans:
     print("Element {0} Found".format(search))
