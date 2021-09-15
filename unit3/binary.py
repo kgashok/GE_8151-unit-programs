@@ -1,6 +1,31 @@
 # Binary search function
 import random
 
+def bsearch_slice(alist, token):
+    '''binary search using the intuitive slice operator
+    @author kgashok
+    @param alist is a list of numbers
+    @param token is an integer
+
+    @return True if found else False 
+
+    '''
+    while alist: 
+        print(f'{alist}', end=":: ")
+        midpoint = len(alist) // 2
+        midvalue = alist[midpoint]
+        print(f'search for: {token} at mid:{midpoint}, midvalue: {midvalue}')
+
+        if token == midvalue: 
+            return True
+        
+        alist = alist[:midpoint] if token < midvalue else \
+            alist[midpoint+1:]
+    
+    return False
+
+
+    
 
 def binary_search(alist, token):
     '''implements the binary search algorithm to search for 
@@ -19,7 +44,7 @@ def binary_search(alist, token):
     while left < right:
         midpoint = (left + right) // 2
         midvalue = alist[midpoint]
-        print(f'search for: {token} at mid:{midpoint}, midvalue: {midvalue}')
+        # print(f'search for: {token} at mid:{midpoint}, midvalue: {midvalue}')
 
         if midvalue == token:
             return True
@@ -46,6 +71,12 @@ else:
 
 search = int(input("Enter element to search: "))
 ans = binary_search(num_list, search)
+if ans:
+    print("Element {0} Found".format(search))
+else:
+    print("Element {0} Not Found".format(search))
+
+ans = bsearch_slice(num_list, search)
 if ans:
     print("Element {0} Found".format(search))
 else:
