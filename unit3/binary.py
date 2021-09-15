@@ -1,4 +1,7 @@
 # Binary search function
+import random
+
+
 def binary_search(alist, token):
     '''implements the binary search algorithm to search for 
     'token' in the 'alist'
@@ -30,11 +33,10 @@ def binary_search(alist, token):
 
 
 # Main Program
-import random
 num_list = []
 n = int(input("Enter the number of elements: "))
-if n == 0: 
-    num_list = sorted([random.randint(1, 100) for _ in range (10)])
+if n == 0:
+    num_list = sorted([random.randint(1, 100) for _ in range(10)])
     num_list.sort()
     print(num_list)
 else:
