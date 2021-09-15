@@ -83,16 +83,16 @@ n |  |
 
 
 
-### binarySearch
+### binary_search
 Authors: **kgashok**
 
-implements the binary search algorithm to find 'item' in the 'alist'   
+implements the binary search algorithm to search for 'token' in the 'alist'   
 
 #### Parameters
 name | description | default
 --- | --- | ---
 alist | is a list of numbers | 
-item | is an integer | 
+token | is an integer | 
 
 
 
