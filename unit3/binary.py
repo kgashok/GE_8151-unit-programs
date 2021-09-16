@@ -14,8 +14,8 @@ def bsearch_slice(alist, token):
         print(f'{alist}', end=":: ")
         midpoint = len(alist) // 2
         midvalue = alist[midpoint]
+        
         print(f'search for: {token} at mid:{midpoint}, midvalue: {midvalue}')
-
         if token == midvalue: 
             return True
         
@@ -35,26 +35,27 @@ def binary_search(alist, token):
     @param alist is a list of numbers
     @param token is an integer
 
-    @return True if found else False 
+    @return index or -1 if not found 
 
     '''
     left = 0
     right = len(alist)
-    print()
+    print("alist: {0}, search for {1}".format(alist, token))
+
     while left < right:
         midpoint = (left + right) // 2
         midvalue = alist[midpoint]
-        # print(f'search for: {token} at mid:{midpoint}, midvalue: {midvalue}')
 
+        # print(f'search for: {token} at mid:{midpoint}, midvalue: {midvalue}')
         if midvalue == token:
-            return True
+            return midpoint
 
         if token < midvalue:
             right = midpoint
         else:
             left = midpoint + 1
 
-    return False
+    return -1
 
 
 # Main Program
@@ -70,14 +71,16 @@ else:
         num_list.append(int(item))
 
 search = int(input("Enter element to search: "))
-ans = binary_search(num_list, search)
-if ans:
-    print("Element {0} Found".format(search))
-else:
-    print("Element {0} Not Found".format(search))
-
+print("****Binary Search using Slice")
 ans = bsearch_slice(num_list, search)
 if ans:
     print("Element {0} Found".format(search))
 else:
-    print("Element {0} Not Found".format(search))
+    print("Element {0} not found!".format(search))
+
+print("****Binary Search using indexes")
+ans = binary_search(num_list, search)
+if ans != -1:
+    print("Element {0} Found at index {1}".format(search, ans))
+else:
+    print("Element {0} not found!".format(search))
