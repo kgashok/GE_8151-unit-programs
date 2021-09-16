@@ -15,7 +15,7 @@ def bsearch_slice(alist, token):
         print(f'{alist}', end=":: ")
         midpoint = len(alist) // 2
         midvalue = alist[midpoint]
-        
+
         print(f'search for: {token} at mid:{midpoint}, midvalue: {midvalue}')
 
         if token == midvalue:
