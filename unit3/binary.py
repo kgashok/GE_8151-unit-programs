@@ -11,7 +11,7 @@ def bsearch_slice(alist, token):
     @return True if found else False 
 
     '''
-    c = 0
+    c = 1
     while alist:
         print(f'{alist}', end=":: ")
         midpoint = len(alist) // 2
