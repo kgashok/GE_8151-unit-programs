@@ -5,123 +5,43 @@
 
 ## Functions
 
-### distance_between
+### random_list
 
 
 
 #### Parameters
 name | description | default
 --- | --- | ---
-pointA |  | 
-pointB |  | 
+mincount |  | 
+maxcount |  | 
+maxval |  | 
+minval |  | 1
 
 
 
 
 
-### circulate
-Authors: **kgashok**
-
-circulate between three variables, three times   
-
-#### Parameters
-name | description | default
---- | --- | ---
-a | is a integer | 
-b | is a integer | 
-c | is a integer | 
-
-
-
-
-
-### circulate_list
-Authors: **kgashok**
-
-circulate 'n' elements in a list, n times   
-
-#### Parameters
-name | description | default
---- | --- | ---
-alist | contains the 'n' elements | 
-
-
-
-
-
-### swap_func
-
-
-
-
-
-
-
-### add
+### generate_histogram
 
 
 
 #### Parameters
 name | description | default
 --- | --- | ---
-numlst |  | 
+arlist |  | 
 
 
 
 
 
-### square_root
-
-
-
-#### Parameters
-name | description | default
---- | --- | ---
-n |  | 
-
-
-
-
-
-### binary_search
-Authors: **kgashok**
-
-implements the binary search algorithm to search for 'token' in the 'alist'   
-
-#### Parameters
-name | description | default
---- | --- | ---
-alist | is a list of numbers | 
-token | is an integer | 
-
-
-
-
-
-### linearsearch
-Authors: **KAMALATHANGARAJAN**
-
-In this type of search, a sequential search is made over all items one by one. Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the end of the data collection.   
-
-#### Parameters
-name | description | default
---- | --- | ---
-num_list |  | 
-search |  | 
-
-
-
-
-
-### gcd
+### generate_histogram2
 
 
 
 #### Parameters
 name | description | default
 --- | --- | ---
-x |  | 
-y |  | 
+arlist |  | 
 
 
 
@@ -182,15 +102,31 @@ j |  |
 
 
 
-### selectsort
+### partition
 
 
-implements the selection sort   
 
 #### Parameters
 name | description | default
 --- | --- | ---
-lst | unsorted list of numbers | 
+arr |  | 
+low |  | 
+high |  | 
+
+
+
+
+
+### quickSort
+
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+arr |  | 
+low |  | 
+high |  | 
 
 
 
@@ -222,73 +158,152 @@ alist |  |
 
 
 
-### partition
+### selectsort
+
+
+implements the selection sort   
+
+#### Parameters
+name | description | default
+--- | --- | ---
+lst | unsorted list of numbers | 
+
+
+
+
+
+### distance_between
+Authors: **kgashok**
+
+returns the distance between two cartesian points   
+
+#### Parameters
+name | description | default
+--- | --- | ---
+pointA | tuple containing x and y coordinates | 
+pointB | tuple containing x and y coordinates | 
+
+
+
+
+
+### circulate
+Authors: **kgashok**
+
+circulate between three variables, three times   
+
+#### Parameters
+name | description | default
+--- | --- | ---
+a | is a integer | 
+b | is a integer | 
+c | is a integer | 
+
+
+
+
+
+### circulate_list
+Authors: **kgashok**
+
+circulate 'n' elements in a list, n times   
+
+#### Parameters
+name | description | default
+--- | --- | ---
+alist | contains the 'n' elements | 
+
+
+
+
+
+### swap_func
+
+
+
+
+
+
+
+### square_root
 
 
 
 #### Parameters
 name | description | default
 --- | --- | ---
-arr |  | 
-low |  | 
-high |  | 
+n |  | 
 
 
 
 
 
-### quickSort
-
-
-
-#### Parameters
-name | description | default
---- | --- | ---
-arr |  | 
-low |  | 
-high |  | 
-
-
-
-
-
-### random_list
+### add
 
 
 
 #### Parameters
 name | description | default
 --- | --- | ---
-mincount |  | 
-maxcount |  | 
-maxval |  | 
-minval |  | 1
+numlst |  | 
 
 
 
 
 
-### generate_histogram
+### linearsearch
+Authors: **KAMALATHANGARAJAN**
+
+In this type of search, a sequential search is made over all items one by one. Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the end of the data collection.   
+
+#### Parameters
+name | description | default
+--- | --- | ---
+num_list |  | 
+search |  | 
+
+
+
+
+
+### gcd
 
 
 
 #### Parameters
 name | description | default
 --- | --- | ---
-arlist |  | 
+x |  | 
+y |  | 
 
 
 
 
 
-### generate_histogram2
+### bsearch_slice
+Authors: **kgashok**
+
+binary chop (aka binary search) using the intuitive slice operator 
+#### Parameters
+name | description | default
+--- | --- | ---
+alist | is a list of numbers | 
+token | is an integer | 
 
 
+
+
+
+### binary_search
+Authors: **kgashok**
+
+implements the binary search algorithm to search for an integer in a list of numbers   
 
 #### Parameters
 name | description | default
 --- | --- | ---
-arlist |  | 
+alist | is a list of numbers | 
+token | is an integer | 
 
 
 
@@ -298,6 +313,22 @@ arlist |  |
 
 
 returns an integer number as guessed by the user 
+
+
+
+
+### tower_of_hanoi
+Authors: **sdnandhu**
+
+
+#### Parameters
+name | description | default
+--- | --- | ---
+n |  | 
+fromTower |  | 
+toTower |  | 
+tempTower |  | 
+
 
 
 
@@ -353,22 +384,6 @@ name | description | default
 --- | --- | ---
 deck |  | 
 newCard |  | 
-
-
-
-
-
-### tower_of_hanoi
-Authors: **sdnandhu**
-
-
-#### Parameters
-name | description | default
---- | --- | ---
-n |  | 
-fromTower |  | 
-toTower |  | 
-tempTower |  | 
 
 
 
