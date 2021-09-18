@@ -5,13 +5,13 @@ from math import sqrt
 
 def distance_between(pointA, pointB):
     '''returns the distance between two cartesian points
-    
+
     @author kgashok
     @param pointA tuple containing x and y coordinates
     @param pointB tuple containing x and y coordinates
-    
+
     @return float value representing distance'''
-    
+
     x1, y1 = pointA
     x2, y2 = pointB
 
