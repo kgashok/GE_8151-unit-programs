@@ -1,4 +1,5 @@
 # Minimum Number In a List
+<img src="./img/MinNumberFrame.png" style="width:400px;"/>
 ## Table of Contents
 - [Problem Statement](#problem-statement)
 - [Python Code](#python-code)
