@@ -16,7 +16,7 @@
 * If x<m, then we only need to continue earching in the left half of the original array.
 * <div align="justify"> <p> We can recursively continue this process until either the value is found, or if the interval is empty (meaning that x was not in our original array). </div></p> 
 
-<img src="./img/Binary Search.png" style="width:400px;" class="center"/>
+<img src="./img/Binary Search.png" style="width:800px;" class="center"/>
 
 
 
