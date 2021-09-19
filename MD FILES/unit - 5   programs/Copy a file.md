@@ -59,7 +59,7 @@ second.txt
  ```
 
 ## Sample Output
-<img src="./img/OPCopyFile.png" style="width:400px;" class="center"/>
+<img src="./img/OPCopyFile.PNG" style="width:400px;" class="center"/>
 
 ## Replit Link
 https://replit.com/@profsathish/CopyFile#main.py
