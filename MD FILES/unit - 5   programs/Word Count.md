@@ -54,7 +54,7 @@ large-scale projects
 ```
 
 ## Sample Output
-<img src="./img/OPWordCount.png" style="width:400px;" class="center"/>
+<img src="./img/OPWordCount.PNG" style="width:400px;" class="center"/>
 
 ## Replit Link
 https://replit.com/@profsathish/wordcount#main.py
