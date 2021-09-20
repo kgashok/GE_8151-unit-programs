@@ -81,7 +81,7 @@ print(selectsort(lst))
 ```
 
 ## Sample Output
-<img src=".img/OPSelectSort.PNG" style="width:400px;" class="center"/>
+<img src="./img/OPSelectSort.PNG" style="width:400px;" class="center"/>
 
 ## Replit Link
 https://tinyurl.com/SelectionSortReplit
