@@ -22,7 +22,7 @@
 
 <div align="justify"> <p>The key process in quickSort is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.  </div></p>
 
-<img src="./img/Quicksortsteps.png" style="width:600px;" class="center"/>
+<img src="./img/QuickSortsteps.png" style="width:600px;" class="center"/>
 
 ```
 /* low  --> Starting index,  high  --> Ending index */
