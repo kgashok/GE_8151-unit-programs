@@ -95,7 +95,7 @@ def quickSort(arr, low, high):
 <img src="./img/OPQuickSort.PNG" style="width:400px;" class="center"/>
 
 ## Replit Link
-http://tiny.cc/QuickSortKiTE
+https://tinyurl.com/QuickSortReplit
 
 ## PythonTutor Link
 
