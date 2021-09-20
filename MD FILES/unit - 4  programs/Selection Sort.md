@@ -81,11 +81,11 @@ print(selectsort(lst))
 ```
 
 ## Sample Output
-<img src="./img/OPLinearSearch.JPG" style="width:400px;" class="center"/>
+<img src=".img/OPSelectSort.PNG" style="width:400px;" class="center"/>
 
 ## Replit Link
-https://tinyurl.com/LinearSearchKiTE
+https://tinyurl.com/SelectionSortReplit
 
 ## PythonTutor Link
 
-https://tinyurl.com/LinearSearchVisualize
+http://tiny.cc/SelectSortVisualize
