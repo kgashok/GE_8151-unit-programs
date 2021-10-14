@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#guess-a-number">Guess A Number</a>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#problem-statement">Problem Statement</a></li>
+<li><a href="#python-code">Python Code</a></li>
+<li><a href="#sample-output">Sample Output</a></li>
+<li><a href="#replit-link">Replit Link</a></li>
+<li><a href="#pythontutor-link">PythonTutor Link</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="guess-a-number">Guess A Number</h1>
+<img src="./img/GuessGame.png" class="center">
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#problem-statement">Problem Statement</a></li>
+<li><a href="#python-code">Python Code</a></li>
+<li><a href="#Sample-Output">Sample Output</a></li>
+<li><a href="#replit-link">Replit Link</a></li>
+<li><a href="#pythontutor-link">PythonTutor Link</a></li>
+</ul>
+<h2 id="problem-statement">Problem Statement</h2>
+<hr>
+<p><strong>Shankar and Vijay are playing a game of integers in which Shankar chooses an integer in his mind (can be any integer value with in range of 1 to 100 ) and Vijay had to find that integer through some guesses.</strong></p>
+<hr>
+<p><em>Shankar can provides 3 hints to Vijay ,each hint can be one of the below types:</em></p>
+<ul>
+<li>Type 1 : Guess is Low</li>
+<li>Type 2 : Guess is High</li>
+<li>Type 3 : You guessed my number!</li>
+</ul>
+<p>Now Vijay has to make some guesses in order to find Shankar’s integer._</p>
+<hr>
+<p><strong>Note:</strong>  vijay is given only 10 chances to guess the number and if vijay wins the game then return true otherwise return false.</p>
+<h2 id="python-code">Python Code</h2>
+<pre class=" language-python"><code class="prism  language-python"><span class="token triple-quoted-string string">"""Guess the Number Try to guess the secret number based on hints."""</span>
+
+<span class="token keyword">import</span> random
+
+<span class="token keyword">def</span> <span class="token function">ask_for_guess</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">'''returns an integer number as guessed by the user'''</span>
+    <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+        guess <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'&gt; '</span><span class="token punctuation">)</span>  <span class="token comment"># Enter the guess.</span>
+
+        <span class="token keyword">if</span> guess<span class="token punctuation">.</span>isdecimal<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token builtin">int</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span>  <span class="token comment"># Convert string guess to an integer.</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Please enter a number between 1 and 100.'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'*** Guess the Number ***'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+secretNumber <span class="token operator">=</span> random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>  <span class="token comment"># Select a random number.</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'I am thinking of a number between 1 and 100.'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># Give the player 10 guesses.</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'You have {} guesses left. Take a guess.'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">-</span> i<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    guess <span class="token operator">=</span> ask_for_guess<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> guess <span class="token operator">==</span> secretNumber<span class="token punctuation">:</span>
+        <span class="token keyword">break</span>  <span class="token comment"># Break out of the for loop if the guess is correct.</span>
+
+    <span class="token comment"># Offer a hint:</span>
+    <span class="token keyword">if</span> guess <span class="token operator">&lt;</span> secretNumber<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Your guess is too low.'</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> guess <span class="token operator">&gt;</span> secretNumber<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Your guess is too high.'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Reveal the results:</span>
+<span class="token keyword">if</span> guess <span class="token operator">==</span> secretNumber<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Yay! You guessed my number!'</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Game over. The number I was thinking of was'</span><span class="token punctuation">,</span> secretNumber<span class="token punctuation">)</span>
+</code></pre>
+<h2 id="sample-output">Sample Output</h2>
+<img src="./img/OPGuessANumber.JPG">
+<h2 id="replit-link">Replit Link</h2>
+<p><a href="https://cutt.ly/GuessANumberGame">https://cutt.ly/GuessANumberGame</a></p>
+<img src="./img/GuessGameRepl.png">
+<h2 id="pythontutor-link">PythonTutor Link</h2>
+<p><a href="https://cutt.ly/GuessANumberGameVisualization">https://cutt.ly/GuessANumberGameVisualization</a></p>
+<img src="./img/GuessGameVisual.png">
+
+    </div>
+  </div>
+</body>
+
+</html>
