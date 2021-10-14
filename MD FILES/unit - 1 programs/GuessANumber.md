@@ -1,3 +1,4 @@
+
 # Guess A Number 
 <img src="./img/GuessGame.png" style="width:400px;" class="center"/>
 
@@ -12,19 +13,16 @@
 
 ## Problem Statement
 
-___
-**Shankar and Vijay are playing a game of integers in which Shankar chooses an integer in his mind (can be any integer value with in range of 1 to 100 ) and Vijay had to find that integer through some guesses.**
-___
+Shankar and Vijay are playing a game of integers. Shankar chooses an integer of his choice in his mind. It can be any integer value within the range of **`1 to 100`**.  Now, Vijay had to find that integer through some guesses.
 
-_Shankar can provides 3 hints to Vijay ,each hint can be one of the below types:_
+Shankar can provides 3 hints to Vijay, each hint can be one of the below types:
 * Type 1 : Guess is Low
 * Type 2 : Guess is High
 * Type 3 : You guessed my number!
 
-Now Vijay has to make some guesses in order to find Shankar's integer._
-___
+Now Vijay has to make some guesses in order to find Shankar's integer.
 
-**Note:**  vijay is given only 10 chances to guess the number and if vijay wins the game then return true otherwise return false.
+**Note:**  Vijay is given only 10 chances to guess the number. If Vijay wins the game, then return `True` otherwise return `False`.
 
 
 ## Python Code
